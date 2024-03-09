@@ -1,0 +1,204 @@
+body {
+    font-weight: bold;
+}
+
+.header-section {
+    position: relative;
+    margin-bottom: 5rem;
+}
+
+.header-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../media/img1.jpg);
+    opacity: 0.5; 
+    z-index: -1;
+}
+
+.header {
+    position: relative; 
+    z-index: 1; 
+    text-align: center;
+    gap: 3rem;
+    color: rgb(3, 2, 2);
+    margin: 2rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2.5rem;
+}
+
+/* Style for paragraph inside the header */
+
+header > p {
+    margin-top: 1.75rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: rgb(3, 2, 2);
+}
+
+header > h1 {
+    font-weight: bold;
+    font-size: 5rem;
+}
+
+/* background for the section below the quiz box */
+
+.section {
+    margin: 0.15rem;
+    border-radius: 0.5rem;
+    background: linear-gradient( #ffffff, #2b20537c);
+    padding: 1rem;
+}
+
+h3 {
+    text-align: center;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-bottom: 5rem;
+}
+
+.link:hover {
+    color: #b80707;
+}
+
+/* Quiz box style and position */
+
+#quiz-box {
+    max-width: 40rem;
+    max-height: 40rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.652rem rgba(0, 0, 0, 0.3);
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#question {
+    font-size: 1rem;
+    margin-bottom: 0.938rem;
+}
+
+input {
+    font-size: 1rem;
+}
+
+button {
+    background-color: #2b20537c;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #b80707;
+}
+
+.navbar {
+    display: inline-block;
+    margin-bottom: 5rem;
+    width: 100%;
+    text-align: center
+}
+
+/* Colour, alignment and padding of the navigation buttons */
+
+.navbar a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+/* Changes the navigation buttons background, colour and font style when hovered over */
+
+.navbar a:hover {
+    background-color: #b80707;
+    color: black;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.current {
+    background-color: grey;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+  
+.video-container iframe {
+    max-width: 480px;
+    max-height: 240px;
+    width: auto;
+    height: auto;
+}
+
+/* Media query for phones */
+@media only screen and (max-width: 600px) {
+    
+    .header-section::before {
+        background-size: cover; 
+        opacity: 0.3; 
+    }
+    
+    header > h1 {
+        font-size: 3rem; 
+    }
+
+    header > p {
+        font-size: 1.2rem; 
+    }
+
+    .section {
+        margin: 1rem; 
+    }
+
+    h3 {
+        margin-left: 2rem; 
+        margin-right: 2rem; 
+        margin-bottom: 2rem; 
+    }
+
+    #quiz-box {
+        max-width: 90%;
+        padding: 1rem; 
+    }
+
+    #question {
+        font-size: 0.8rem; 
+    }
+
+    input {
+        font-size: 0.8rem; 
+    }
+
+    button {
+        font-size: 0.8rem; 
+    }
+
+    .navbar a {
+        padding: 10px 15px; 
+    }
+
+    .video-container video {
+        max-width: 100%; 
+        height: auto; 
+    }
+}

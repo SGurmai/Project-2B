@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Quiz</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    
+    <section class="header-section">
+
+    <header class="header">
+        <h1>Math quiz</h1>
+        <p>Unleash Your Math Superpowers: Dive into the Ultimate Math Quiz Adventure! Test your skills, 
+            beat the clock, and climb the leaderboard. Ready for the challenge?</p>
+    </header>
+
+    <div class="navbar">
+        <a href="../index.html">Home</a>
+        <a href="./Practice.html" class="current">Practice</a>
+        <a href="./Education.html">Education</a>
+    </div>
+
+    </section>
+
+    <!-- Quiz container -->
+
+    <section class="section">
+        <div id="quiz-box">
+            <h2>Test your Math skills!</h2>
+            <p>Test your math skills with our fun and challenging quiz.</p>
+            <p id="question"></p>
+            <input type="text" id="answer" placeholder="Enter your answer">
+            <p id="result"></p>
+            <button onclick=checkAnswer()>Submit</button>
+        </div>
+    </section>
+    
+    <script src="../script.js"></script>
+</body>
+</html>
