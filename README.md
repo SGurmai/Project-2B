@@ -29,7 +29,7 @@ The Math Quiz project is designed to provide users with an engaging platform to 
 
 ## Screenshots
 
-![PageScreenView] (media/readmescreen.png)
+![PageScreenView] (/media/readmescreen.png)
 
 ## How to Play
 
